@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "transcendentmobs",
+  "version": "${version}",
+  "name": "TranscendentMobs",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/transcendentmobs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.mys7icfox.transcendentmobs.client.TranscendentmobsDataGenerator"
+    ],
+    "client": [
+      "me.mys7icfox.transcendentmobs.client.TranscendentmobsClient"
+    ],
+    "main": [
+      "me.mys7icfox.transcendentmobs.Transcendentmobs"
+    ]
+  },
+  "mixins": [
+    "transcendentmobs.mixins.json",
+    {
+      "config": "transcendentmobs.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
