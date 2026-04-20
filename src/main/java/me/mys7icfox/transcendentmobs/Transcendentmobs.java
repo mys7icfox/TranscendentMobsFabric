@@ -1,5 +1,6 @@
 package me.mys7icfox.transcendentmobs;
 
+import me.mys7icfox.transcendentmobs.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,5 +11,6 @@ public class Transcendentmobs implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItems.registerModItems();
     }
 }
