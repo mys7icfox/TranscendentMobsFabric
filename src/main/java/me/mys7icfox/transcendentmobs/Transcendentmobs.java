@@ -1,5 +1,6 @@
 package me.mys7icfox.transcendentmobs;
 
+import me.mys7icfox.transcendentmobs.block.ModBlocks;
 import me.mys7icfox.transcendentmobs.item.ModItemGroup;
 import me.mys7icfox.transcendentmobs.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -13,6 +14,8 @@ public class Transcendentmobs implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
+
         ModItemGroup.registerItemGroups();
+        ModBlocks.registerModBlocks();
     }
 }

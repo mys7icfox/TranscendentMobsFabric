@@ -2,6 +2,7 @@ package me.mys7icfox.transcendentmobs.item;
 
 import me.mys7icfox.transcendentmobs.Transcendentmobs;
 
+import me.mys7icfox.transcendentmobs.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -18,6 +19,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.AQUAGEM)).entries((displayContext, entries) -> {
                     entries.add(ModItems.AQUAGEM);
                     entries.add(ModItems.RUBYGEM);
+                    entries.add(ModBlocks.ATTUNEMENT_BENCH);
             }).build());
 
     public static void registerItemGroups(){
